@@ -26,12 +26,18 @@ export const digitalRoot = (n:number):number => {
 };
 
 // console.log(solution(10))
-console.log(digitalRoot(942))
+// console.log(digitalRoot(942))
 
 export function multiplicationTable (size: number): number[][] {
-    console.log('dsasda')
-  // Implement me! :)
-    return [[]]
+  const resList: number[][] = []
+  for (let i = 1; i <= size; i++) {
+      const tempArr: number[] = []
+      for (let j = 1; j <= size; j++) {
+          tempArr.push(i * j)
+      }
+      resList.push(tempArr)
+  }
+  return resList
 }
 
-// console.log(multiplicationTable(3))
+console.log(multiplicationTable(4))
