@@ -11,6 +11,7 @@ const solution = (num: number) => {
     const sum: number = divisors.reduce((partialSum, a) => partialSum + a, 0)
     return sum
 }
+// console.log(solution(10))
 
 export const digitalRoot = (n:number):number => {
     const n_str: string = n.toString()
@@ -24,8 +25,6 @@ export const digitalRoot = (n:number):number => {
       return sum
   }
 };
-
-// console.log(solution(10))
 // console.log(digitalRoot(942))
 
 export function multiplicationTable (size: number): number[][] {
@@ -39,5 +38,14 @@ export function multiplicationTable (size: number): number[][] {
   }
   return resList
 }
+// console.log(multiplicationTable(4))
 
-console.log(multiplicationTable(4))
+
+export function reverseVowels (str: string): string {
+  const arr: string[] = []
+  for (let i = 0; i < str.length; i++) {
+      arr.push(str[i])
+  }
+  return arr.reverse().join("")
+}
+// console.log(reverseVowels("typescript is the best"))
