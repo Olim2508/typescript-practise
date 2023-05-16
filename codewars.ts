@@ -42,10 +42,14 @@ export function multiplicationTable (size: number): number[][] {
 
 
 export function reverseVowels (str: string): string {
-  const arr: string[] = []
-  for (let i = 0; i < str.length; i++) {
-      arr.push(str[i])
-  }
-  return arr.reverse().join("")
+    // my version
+  // const arr: string[] = []
+  // for (let i = 0; i < str.length; i++) {
+  //     arr.push(str[i])
+  // }
+  // return arr.reverse().join("")
+
+    // version from internet
+    return str.split("").reverse().join("");
 }
 // console.log(reverseVowels("typescript is the best"))
