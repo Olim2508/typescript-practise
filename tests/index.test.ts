@@ -1,4 +1,4 @@
-import {digitalRoot, reverseVowels} from "../codewars";
+import {digitalRoot, likes, reverseVowels} from "../codewars";
 
 
 describe('testing digital root function', () => {
@@ -28,5 +28,21 @@ describe('reverse vowels', () => {
 
   test('4 words', () => {
     expect(reverseVowels("typescript is the best")).toBe("tseb eht si tpircsepyt");
+  });
+});
+
+
+describe('likes', () => {
+
+  test('zero', () => {
+    expect(likes([])).toBe("no one likes this");
+  });
+
+  test('1 person', () => {
+    expect(likes(["Peter"])).toBe("Peter likes this");
+  });
+
+  test('5 person', () => {
+    expect(likes(["Peter", "John", "Tom", "Jack", "Bob"])).toBe("Peter, John and 3 others like this");
   });
 });
